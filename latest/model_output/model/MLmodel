@@ -1,0 +1,81 @@
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.13
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.0
+mlflow_version: 2.19.0
+model_size_bytes: 6484330
+model_uuid: 8a3e83a9157e4edb812d57dd926281f2
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "num_duration", "required": true}, {"type":
+    "double", "name": "num_credit_amount", "required": true}, {"type": "double", "name":
+    "num_installment_commitment", "required": true}, {"type": "double", "name": "num_residence_since",
+    "required": true}, {"type": "double", "name": "num_age", "required": true}, {"type":
+    "double", "name": "num_existing_credits", "required": true}, {"type": "double",
+    "name": "num_num_dependents", "required": true}, {"type": "double", "name": "cat_checking_status_0_x_200",
+    "required": true}, {"type": "double", "name": "cat_checking_status_0", "required":
+    true}, {"type": "double", "name": "cat_checking_status_200", "required": true},
+    {"type": "double", "name": "cat_checking_status_no_checking", "required": true},
+    {"type": "double", "name": "cat_credit_history_all_paid", "required": true}, {"type":
+    "double", "name": "cat_credit_history_critical_other_existing_credit", "required":
+    true}, {"type": "double", "name": "cat_credit_history_delayed_previously", "required":
+    true}, {"type": "double", "name": "cat_credit_history_existing_paid", "required":
+    true}, {"type": "double", "name": "cat_credit_history_no_credits_all_paid", "required":
+    true}, {"type": "double", "name": "cat_purpose_business", "required": true}, {"type":
+    "double", "name": "cat_purpose_domestic_appliance", "required": true}, {"type":
+    "double", "name": "cat_purpose_education", "required": true}, {"type": "double",
+    "name": "cat_purpose_furniture_equipment", "required": true}, {"type": "double",
+    "name": "cat_purpose_new_car", "required": true}, {"type": "double", "name": "cat_purpose_other",
+    "required": true}, {"type": "double", "name": "cat_purpose_radio_tv", "required":
+    true}, {"type": "double", "name": "cat_purpose_repairs", "required": true}, {"type":
+    "double", "name": "cat_purpose_retraining", "required": true}, {"type": "double",
+    "name": "cat_purpose_used_car", "required": true}, {"type": "double", "name":
+    "cat_savings_status_100_x_500", "required": true}, {"type": "double", "name":
+    "cat_savings_status_500_x_1000", "required": true}, {"type": "double", "name":
+    "cat_savings_status_100", "required": true}, {"type": "double", "name": "cat_savings_status_1000",
+    "required": true}, {"type": "double", "name": "cat_savings_status_no_known_savings",
+    "required": true}, {"type": "double", "name": "cat_employment_1_x_4", "required":
+    true}, {"type": "double", "name": "cat_employment_4_x_7", "required": true}, {"type":
+    "double", "name": "cat_employment_1", "required": true}, {"type": "double", "name":
+    "cat_employment_7", "required": true}, {"type": "double", "name": "cat_employment_unemployed",
+    "required": true}, {"type": "double", "name": "cat_personal_status_female_div_dep_mar",
+    "required": true}, {"type": "double", "name": "cat_personal_status_male_div_sep",
+    "required": true}, {"type": "double", "name": "cat_personal_status_male_mar_wid",
+    "required": true}, {"type": "double", "name": "cat_personal_status_male_single",
+    "required": true}, {"type": "double", "name": "cat_other_parties_co_applicant",
+    "required": true}, {"type": "double", "name": "cat_other_parties_guarantor", "required":
+    true}, {"type": "double", "name": "cat_other_parties_none", "required": true},
+    {"type": "double", "name": "cat_property_magnitude_car", "required": true}, {"type":
+    "double", "name": "cat_property_magnitude_life_insurance", "required": true},
+    {"type": "double", "name": "cat_property_magnitude_no_known_property", "required":
+    true}, {"type": "double", "name": "cat_property_magnitude_real_estate", "required":
+    true}, {"type": "double", "name": "cat_other_payment_plans_bank", "required":
+    true}, {"type": "double", "name": "cat_other_payment_plans_none", "required":
+    true}, {"type": "double", "name": "cat_other_payment_plans_stores", "required":
+    true}, {"type": "double", "name": "cat_housing_for_free", "required": true}, {"type":
+    "double", "name": "cat_housing_own", "required": true}, {"type": "double", "name":
+    "cat_housing_rent", "required": true}, {"type": "double", "name": "cat_job_high_qualif_self_emp_mgmt",
+    "required": true}, {"type": "double", "name": "cat_job_skilled", "required": true},
+    {"type": "double", "name": "cat_job_unemp_unskilled_non_res", "required": true},
+    {"type": "double", "name": "cat_job_unskilled_resident", "required": true}, {"type":
+    "double", "name": "cat_own_telephone_none", "required": true}, {"type": "double",
+    "name": "cat_own_telephone_yes", "required": true}, {"type": "double", "name":
+    "cat_foreign_worker_no", "required": true}, {"type": "double", "name": "cat_foreign_worker_yes",
+    "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2026-06-09 16:06:00.856170'

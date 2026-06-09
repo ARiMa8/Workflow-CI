@@ -1,0 +1,15 @@
+artifact_uri: file:///home/runner/work/Workflow-CI/Workflow-CI/mlruns/0/47aa31624b104b6ca99610ed2e9a4568/artifacts
+end_time: 1781021165281
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 47aa31624b104b6ca99610ed2e9a4568
+run_name: credit_scoring_workflow_ci
+run_uuid: 47aa31624b104b6ca99610ed2e9a4568
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1781021157302
+status: 3
+tags: []
+user_id: runner
