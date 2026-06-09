@@ -1,0 +1,13 @@
+name: credit-scoring-workflow-ci
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      data_dir: {type: str, default: "credit_scoring_preprocessing"}
+      output_dir: {type: str, default: "model_output"}
+      n_estimators: {type: int, default: 200}
+      max_depth: {type: str, default: "none"}
+      random_state: {type: int, default: 42}
+    command: "python modelling.py --data-dir {data_dir} --output-dir {output_dir} --n-estimators {n_estimators} --max-depth {max_depth} --random-state {random_state}"

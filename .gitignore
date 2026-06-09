@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+mlruns/
+mlartifacts/
+MLProject/mlruns/
+MLProject/mlartifacts/
+MLProject/model_output/
+artifact_branch/
+
+.env
+*.log

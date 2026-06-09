@@ -1,0 +1,1 @@
+https://hub.docker.com/r/arima88/credit-scoring-msml
