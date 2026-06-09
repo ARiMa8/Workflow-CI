@@ -69,7 +69,7 @@ jobs:
 
       - name: Build Docker image with MLflow
         run: |
-          mlflow models build-docker -m MLProject/model_output/model -n $IMAGE_NAME:${{ github.sha }}
+          mlflow models build-docker --env-manager=local -m MLProject/model_output/model -n $IMAGE_NAME:${{ github.sha }}
           docker tag $IMAGE_NAME:${{ github.sha }} $IMAGE_NAME:latest
 
       - name: Log in to Docker Hub
